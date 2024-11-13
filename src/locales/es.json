@@ -1,0 +1,29 @@
+{
+  "generixos-app-sidebar-menu-dashboard": "Tablero",
+  "generixos-app-sidebar-menu-settings": "Configuración",
+  "generixos-app-sidebar-menu-logout": "Cerrar sesión",
+  "generixos-app-sidebar-menu-sales": "Ventas",
+  "generixos-app-sidebar-menu-expenses": "Gastos",
+  "generixos-app-sidebar-menu-inventory": "Inventario",
+  "generixos-app-sidebar-menu-analytics": "Análisis",
+  "generixos-app-sidebar-menu-hr": "RRHH",
+  "generixos-app-sidebar-menu-contacts": "Contactos",
+  "generixos-app-sidebar-menu-legal": "Legal",
+
+  "generixos-app-navbar-tooltip-change-language": "Idioma",
+  "generixos-app-navbar-tooltip-notifications": "Notificaciones",
+  "generixos-app-navbar-tooltip-profile": "Perfil",
+  "generixos-app-navbar-tooltip-change-theme": "Tema",
+
+  "generixos-app-page-dashboard-stats-title-today-sales": "Ventas de hoy",
+  "generixos-app-page-dashboard-stats-title-month-sales": "Ventas del mes",
+  "generixos-app-page-dashboard-stats-title-today-expenses": "Gastos de hoy",
+  "generixos-app-page-dashboard-stats-title-month-expenses": "Gastos del mes",
+  "generixos-app-page-dashboard-stats-progress-bar-message-day-sales": " respecto a la meta de ayer",
+  "generixos-app-page-dashboard-stats-progress-bar-message-month-sales": " respecto a la meta del ultimo mes",
+  "generixos-app-page-dashboard-stats-progress-bar-message-day-expenses-up": " de incremento en los gastos respecto a ayer",
+  "generixos-app-page-dashboard-stats-progress-bar-message-day-expenses-down": " de decremento en los gastos respecto a ayer",
+  "generixos-app-page-dashboard-stats-progress-bar-message-month-expenses-up": " de incremento en los gastos respecto al mes pasado",
+  "generixos-app-page-dashboard-stats-progress-bar-message-month-expenses-down": " de decremento en los gastos respecto al mes pasado",
+  "generixos-app-page-dashboard-stats-principal-title": "Estadísticas generales"
+}

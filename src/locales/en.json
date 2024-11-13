@@ -1,0 +1,29 @@
+{
+  "generixos-app-sidebar-menu-dashboard": "Dashboard",
+  "generixos-app-sidebar-menu-settings": "Settings",
+  "generixos-app-sidebar-menu-logout": "Logout",
+  "generixos-app-sidebar-menu-sales": "Sales",
+  "generixos-app-sidebar-menu-expenses": "Expenses",
+  "generixos-app-sidebar-menu-inventory": "Inventory",
+  "generixos-app-sidebar-menu-analytics": "Analytics",
+  "generixos-app-sidebar-menu-hr": "RRHH",
+  "generixos-app-sidebar-menu-contacts": "Contacts",
+  "generixos-app-sidebar-menu-legal": "Legal",
+
+  "generixos-app-navbar-tooltip-change-language": "Language",
+  "generixos-app-navbar-tooltip-notifications": "Notifications",
+  "generixos-app-navbar-tooltip-profile": "Profile",
+  "generixos-app-navbar-tooltip-change-theme": "Theme",
+
+  "generixos-app-page-dashboard-stats-title-today-sales": "Today's Sales",
+  "generixos-app-page-dashboard-stats-title-month-sales": "Month's Sales",
+  "generixos-app-page-dashboard-stats-title-today-expenses": "Today's Expenses",
+  "generixos-app-page-dashboard-stats-title-month-expenses": "Month's expenses",
+  "generixos-app-page-dashboard-stats-progress-bar-message-day-sales": " regarding yesterday's goal",
+  "generixos-app-page-dashboard-stats-progress-bar-message-month-sales": " regarding last month's goal",
+  "generixos-app-page-dashboard-stats-progress-bar-message-day-expenses-up": " increase in expenses compared to yesterday",
+  "generixos-app-page-dashboard-stats-progress-bar-message-day-expenses-down": " decrease in expenses compared to yesterday",
+  "generixos-app-page-dashboard-stats-progress-bar-message-month-expenses-up": " increase in expenses compared to last month",
+  "generixos-app-page-dashboard-stats-progress-bar-message-month-expenses-down": " decrease in expenses compared to last month",
+  "generixos-app-page-dashboard-stats-principal-title": "General statistics"
+}
