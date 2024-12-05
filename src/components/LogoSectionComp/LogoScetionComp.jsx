@@ -1,5 +1,4 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 // Styled components
 const LogoContainer = styled.div`
@@ -13,26 +12,30 @@ const LogoImage = styled.img`
   transition: transform 0.5s ease-in-out;
   ${(props) =>
     props.open &&
-    css` transform: rotate(360deg); `}
+    css`
+      transform: rotate(360deg);
+    `}
 `;
 
 const LogoTitle = styled.h1`
   color: white;
   font-weight: 500;
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
   transform-origin: left;
   transition: transform 0.2s ease-in-out;
   ${(props) =>
     !props.open &&
-    css ` transform: scale(0); `}
+    css`
+      transform: scale(0);
+    `}
 `;
 
 const LogoSection = ({ open }) => {
   return (
     <LogoContainer>
       <LogoImage
-        src="./src/assets/g10.svg"
-        width="35"
+        src="./src/assets/g839.png"
+        width="80"
         open={open}
         alt="Logo"
       />

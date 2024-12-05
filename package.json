@@ -1,7 +1,7 @@
 {
-  "name": "generixos-app-component",
+  "name": "generixos-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -21,9 +21,8 @@
     "classnames": "^2.5.1",
     "evergreen-ui": "^7.1.9",
     "framer-motion": "^6.5.1",
-    "generixos-app-component": "file:",
+    "generixos-app": "file:",
     "i18next": "^23.16.0",
-    "pdfreader": "^1.2.14",
     "react": "^18.3.1",
     "react-awesome-button": "^6.5.1",
     "react-chartjs-2": "^5.2.0",
@@ -33,6 +32,7 @@
     "react-responsive": "^9.0.0",
     "react-router-dom": "^6.27.0",
     "react-tabs": "^6.0.2",
+    "recharts": "^2.13.3",
     "styled-components": "^6.1.13"
   },
   "devDependencies": {

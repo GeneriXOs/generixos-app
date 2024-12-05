@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import useState from "react";
 import styled from "styled-components";
 import LogoSection from "../LogoSectionComp/LogoScetionComp";
 import MenuItem from "../MenuItemComp/MenuItemComp";
@@ -9,8 +9,6 @@ import {
   faChartLine,
   faFileInvoice,
   faGears,
-  faGlobe,
-  faPowerOff,
   faScaleUnbalanced,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";

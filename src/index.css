@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .open-sans-font {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-
 }
 
 :root {
@@ -17,36 +15,36 @@
   --contrast-color: #85cbf8;
 
   /* Darks and Lights colors */
-  --dark: #1A1E29;
+  --dark: #1a1e29;
   --light: #daddec;
 
   --deep-black: #000000;
-  --deep-white: #FFFFFF;
+  --deep-white: #ffffff;
 
   /* Shadows colors */
-  --light-black: #2C2F3F;
-  --light-gray: #C4C4C4;
+  --light-black: #2c2f3f;
+  --light-gray: #c4c4c4;
   --glass-dark: rgba(0, 0, 0, 0.17);
   --glass-light: rgba(255, 255, 255, 0.17);
 
   /* Logo colors and highlights */
-  --pink-logo: #D68B96;
+  --pink-logo: #d68b96;
   --blue-logo: #85cbf8;
   --vanilla-logo: #f2f2f2;
 
   /* Alerts colors */
-  --success-alert: #01C38E;
+  --success-alert: #01c38e;
   --success-alert-soft: rgba(1, 195, 142, 0.5);
-  --success-alert-extra-soft: rgba(1, 195, 142, 0.3);
+  --success-alert-extra-soft: #01c38f1a;
   --info-alert: #85cbf8;
   --info-alert-soft: rgba(102, 182, 255, 0.5);
-  --info-alert-extra-soft: rgba(102, 182, 255, 0.3);
-  --warning-alert: #F5A623;
+  --info-alert-extra-soft: #66b6ff1a;
+  --warning-alert: #f5a623;
   --warning-alert-soft: rgba(245, 166, 35, 0.5);
-  --warning-alert-extra-soft: rgba(245, 166, 35, 0.3);
-  --danger-alert: #D68B96;
+  --warning-alert-extra-soft: #f5a6231a;
+  --danger-alert: #d68b96;
   --danger-alert-soft: rgba(229, 115, 115, 0.5);
-  --danger-alert-extra-soft: rgba(229, 115, 115, 0.3);
+  --danger-alert-extra-soft: #e573731a;
 
   /* Modal colors overlay */
   --overlay-color: rgba(35, 83, 128, 0.356);
@@ -57,16 +55,13 @@
   background-color: var(--background-color-primary);
 }
 
-
 [data-theme="light"] {
   --background-color-primary: var(--light);
   --glassmorphism-color: var(--glass-light);
   --text-color-primary: var(--dark);
   --deep-color: var(--deep-white);
   --shadow-color: var(--light-gray);
-
 }
-
 
 [data-theme="dark"] {
   --background-color-primary: var(--dark);
@@ -112,8 +107,6 @@
   transition: background-color 0.5s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-
-
 
 @-webkit-keyframes pulse {
   0% {
