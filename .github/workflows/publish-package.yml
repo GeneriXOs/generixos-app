@@ -3,8 +3,7 @@ name: Build and Publish to GitHub Packages
 on:
   push:
     branches:
-      - main # Ejecutarse en cada push a la rama main
-
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
