@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import PropTypes from 'prop-types';
 
 // Styled components
 const LogoContainer = styled.div`
@@ -18,11 +19,7 @@ const LogoTitle = styled.h1`
   font-size: 1.25rem;
   transform-origin: left;
   transition: transform 0.2s ease-in-out;
-  ${(props) =>
-    !props.open &&
-    css`
-      transform: scale(0);
-    `}
+  ${(props) => !props.open && css`transform: scale(0);`}
 `;
 
 const LogoSection = ({ open }) => {
@@ -37,6 +34,10 @@ const LogoSection = ({ open }) => {
       <LogoTitle open={open}>GeneriXOs</LogoTitle>
     </LogoContainer>
   );
+};
+
+LogoSection.propTypes = {
+  open: PropTypes.bool.isRequired,
 };
 
 export default LogoSection;
