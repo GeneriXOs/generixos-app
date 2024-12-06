@@ -1,9 +1,10 @@
 name: Build and Publish to GitHub Packages
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main # Se ejecuta cuando se haga push a la rama main
+      - main
 
 jobs:
   build:
@@ -27,4 +28,4 @@ jobs:
       - name: Publish package to GitHub Packages
         run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }} # Usa tu token de GitHub aquí
+          NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
