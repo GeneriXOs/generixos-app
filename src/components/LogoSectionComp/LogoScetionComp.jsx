@@ -3,18 +3,13 @@ import styled, { css } from "styled-components";
 // Styled components
 const LogoContainer = styled.div`
   display: flex;
-  gap: 0.5rem;
+  gap: 0.3rem;
   align-items: center;
 `;
 
 const LogoImage = styled.img`
   cursor: pointer;
-  transition: transform 0.5s ease-in-out;
-  ${(props) =>
-    props.open &&
-    css`
-      transform: rotate(360deg);
-    `}
+  transition: transform 0.8s ease-in-out;
 `;
 
 const LogoTitle = styled.h1`
@@ -35,9 +30,9 @@ const LogoSection = ({ open }) => {
     <LogoContainer>
       <LogoImage
         src="./src/assets/g839.png"
-        width="80"
         open={open}
         alt="Logo"
+        width={40}
       />
       <LogoTitle open={open}>GeneriXOs</LogoTitle>
     </LogoContainer>
