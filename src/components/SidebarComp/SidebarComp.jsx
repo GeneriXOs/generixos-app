@@ -20,7 +20,7 @@ const SidebarContainer = styled.div`
   height: 100vh;
   padding: 1.2rem;
   padding-top: 1.5rem;
-  transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease;
   width: ${(props) => (props.open ? "20rem" : "5rem")};
   position: relative;
   left: 0;
