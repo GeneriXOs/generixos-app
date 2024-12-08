@@ -24,6 +24,24 @@ const ContainerPage = () => {
     document.documentElement.lang = i18n.language;
   };
 
+  const PageContainer = styled.div`
+    display: flex;
+    height: 100%;
+    position: relative;
+    padding: 0%;
+    margin: 0%;
+    background-color: var(--background-color-primary);
+    color: var(--text-color-primary);
+  `;
+
+  const PageContainerRender = styled.div`
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: var(--background-color-primary);
+    color: var(--text-color-primary);
+  `;
+
   return (
     <PageContainer>
       {/* Sidebar */}
@@ -34,9 +52,8 @@ const ContainerPage = () => {
 
       {/* Main content area */}
       <div
-        className={`flex-1 flex flex-col transition-all duration-300 ${
-          sidebarOpen ? "" : "ml-20"
-        }`}
+        className={`flex-1 flex flex-col transition-all duration-300 ${sidebarOpen ? "" : "ml-20"
+          }`}
       >
         {/* Navbar */}
         <NavbarComp
@@ -54,22 +71,5 @@ const ContainerPage = () => {
   );
 };
 
-const PageContainer = styled.div`
-  display: flex;
-  height: 100%;
-  position: relative;
-  padding: 0%;
-  margin: 0%;
-  background-color: var(--background-color-primary);
-  color: var(--text-color-primary);
-`;
-
-const PageContainerRender = styled.div`
-  height: 100%;
-  padding: 0%;
-  margin: 0%;
-  background-color: var(--background-color-primary);
-  color: var(--text-color-primary);
-`;
 
 export default ContainerPage;

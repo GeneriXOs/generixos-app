@@ -20,116 +20,6 @@ import {
 } from "evergreen-ui";
 import { t } from "i18next";
 
-const NavbarComp = ({
-  sidebarOpen,
-  handlerBurgerClick,
-  handlerLanguageChange,
-}) => {
-  const [value, setValue] = useState("");
-  const [checked, setChecked] = useState(false);
-
-  const handleSwitchChange = (e) => {
-    setChecked(e.target.checked);
-    const body = document.getElementsByTagName("body")[0];
-    if (checked) {
-      body.setAttribute("data-theme", "light");
-      localStorage.setItem("theme", "light");
-    } else {
-      body.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
-    }
-  };
-
-  return (
-    <Container sidebarOpen={sidebarOpen}>
-      <TopBar>
-        <BurgerButton
-          className="Burger-btn"
-          onClick={() => handlerBurgerClick()}
-        >
-          <FontAwesomeIcon icon={faBars} fontSize={20} />
-        </BurgerButton>
-        <SearchWrapper className="Search-section">
-          <TextInput
-            className="TextInput"
-            placeholder="Search..."
-            onChange={(e) => setValue(e.target.value)}
-            value={value}
-            width="450px"
-          />
-        </SearchWrapper>
-
-        <IconsWrapper>
-          <Tooltip content={t("generixos-app-navbar-tooltip-change-language")}>
-            <IconsNavButton onClick={() => handlerLanguageChange()}>
-              <FontAwesomeIcon icon={faGlobe} fontSize={20} />
-            </IconsNavButton>
-          </Tooltip>
-          <Popover
-            position={Position.BOTTOM_RIGHT}
-            content={
-              <Menu>
-                <Menu.Group>
-                  <Menu.Item>Share...</Menu.Item>
-                  <Menu.Item>Move...</Menu.Item>
-                  <Menu.Item>Rename...</Menu.Item>
-                  <Menu.Item>Rename...</Menu.Item>
-                  <Menu.Item>Rename...</Menu.Item>
-                  <Menu.Item>Rename...</Menu.Item>
-                  <Menu.Item>Rename...</Menu.Item>
-                  <Menu.Item>Rename...</Menu.Item>
-                  <Menu.Item>Rename...</Menu.Item>
-                  <Menu.Item>Rename...</Menu.Item>
-                </Menu.Group>
-              </Menu>
-            }
-          >
-            <Tooltip content={t("generixos-app-navbar-tooltip-notifications")}>
-              <IconsNavButton>
-                <FontAwesomeIcon icon={faBell} fontSize={20} />
-                <NotiPulsar size={8} />
-              </IconsNavButton>
-            </Tooltip>
-          </Popover>
-
-          <Tooltip content={t("generixos-app-navbar-tooltip-change-theme")}>
-            <Switch
-              checked={checked}
-              onChange={(e) => handleSwitchChange(e)}
-              height={20}
-              marginLeft="1.5rem"
-            />
-          </Tooltip>
-
-          <Popover
-            position={Position.BOTTOM_LEFT}
-            content={
-              <Menu>
-                <Menu.Group>
-                  <Menu.Item icon={PeopleIcon}>Share...</Menu.Item>
-                  <Menu.Item icon={CircleArrowRightIcon}>Move...</Menu.Item>
-                  <Menu.Item icon={EditIcon} secondaryText="⌘R">
-                    Rename...
-                  </Menu.Item>
-                </Menu.Group>
-                <Menu.Divider />
-                <Menu.Group>
-                  <Menu.Item icon={TrashIcon} intent="danger">
-                    Delete...
-                  </Menu.Item>
-                </Menu.Group>
-              </Menu>
-            }
-          >
-            <Tooltip content={t("generixos-app-navbar-tooltip-profile")}>
-              <Avatar name="Libardo Lozano" size={40} marginRight={16} />
-            </Tooltip>
-          </Popover>
-        </IconsWrapper>
-      </TopBar>
-    </Container>
-  );
-};
 
 const BurgerButton = styled.button`
   border: none;
@@ -256,5 +146,116 @@ const NotiPulsar = styled(Pulsar)`
     opacity: 1;
   }
 `;
+
+const NavbarComp = ({
+  sidebarOpen,
+  handlerBurgerClick,
+  handlerLanguageChange,
+}) => {
+  const [value, setValue] = useState("");
+  const [checked, setChecked] = useState(false);
+
+  const handleSwitchChange = (e) => {
+    setChecked(e.target.checked);
+    const body = document.getElementsByTagName("body")[0];
+    if (checked) {
+      body.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
+    } else {
+      body.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    }
+  };
+
+  return (
+    <Container sidebarOpen={sidebarOpen}>
+      <TopBar>
+        <BurgerButton
+          className="Burger-btn"
+          onClick={() => handlerBurgerClick()}
+        >
+          <FontAwesomeIcon icon={faBars} fontSize={20} />
+        </BurgerButton>
+        <SearchWrapper className="Search-section">
+          <TextInput
+            className="TextInput"
+            placeholder="Search..."
+            onChange={(e) => setValue(e.target.value)}
+            value={value}
+            width="450px"
+          />
+        </SearchWrapper>
+
+        <IconsWrapper>
+          <Tooltip content={t("generixos-app-navbar-tooltip-change-language")}>
+            <IconsNavButton onClick={() => handlerLanguageChange()}>
+              <FontAwesomeIcon icon={faGlobe} fontSize={20} />
+            </IconsNavButton>
+          </Tooltip>
+          <Popover
+            position={Position.BOTTOM_RIGHT}
+            content={
+              <Menu>
+                <Menu.Group>
+                  <Menu.Item>Share...</Menu.Item>
+                  <Menu.Item>Move...</Menu.Item>
+                  <Menu.Item>Rename...</Menu.Item>
+                  <Menu.Item>Rename...</Menu.Item>
+                  <Menu.Item>Rename...</Menu.Item>
+                  <Menu.Item>Rename...</Menu.Item>
+                  <Menu.Item>Rename...</Menu.Item>
+                  <Menu.Item>Rename...</Menu.Item>
+                  <Menu.Item>Rename...</Menu.Item>
+                  <Menu.Item>Rename...</Menu.Item>
+                </Menu.Group>
+              </Menu>
+            }
+          >
+            <Tooltip content={t("generixos-app-navbar-tooltip-notifications")}>
+              <IconsNavButton>
+                <FontAwesomeIcon icon={faBell} fontSize={20} />
+                <NotiPulsar size={8} />
+              </IconsNavButton>
+            </Tooltip>
+          </Popover>
+
+          <Tooltip content={t("generixos-app-navbar-tooltip-change-theme")}>
+            <Switch
+              checked={checked}
+              onChange={(e) => handleSwitchChange(e)}
+              height={20}
+              marginLeft="1.5rem"
+            />
+          </Tooltip>
+
+          <Popover
+            position={Position.BOTTOM_LEFT}
+            content={
+              <Menu>
+                <Menu.Group>
+                  <Menu.Item icon={PeopleIcon}>Share...</Menu.Item>
+                  <Menu.Item icon={CircleArrowRightIcon}>Move...</Menu.Item>
+                  <Menu.Item icon={EditIcon} secondaryText="⌘R">
+                    Rename...
+                  </Menu.Item>
+                </Menu.Group>
+                <Menu.Divider />
+                <Menu.Group>
+                  <Menu.Item icon={TrashIcon} intent="danger">
+                    Delete...
+                  </Menu.Item>
+                </Menu.Group>
+              </Menu>
+            }
+          >
+            <Tooltip content={t("generixos-app-navbar-tooltip-profile")}>
+              <Avatar name="Libardo Lozano" size={40} marginRight={16} />
+            </Tooltip>
+          </Popover>
+        </IconsWrapper>
+      </TopBar>
+    </Container>
+  );
+};
 
 export default NavbarComp;
